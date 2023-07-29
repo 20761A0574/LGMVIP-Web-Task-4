@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body class="calci">
+    <div id="calculator" class="cal1">
+        <center>
+            <font size=6 color="blue" class="heading"><b>CALCULATOR</b></font>
+        </center>
+        <p></p>
+        <input type="text" id="expression" class="searchbar" readonly>
+        <table>
+            <tr>
+                <td><input type="button" value="AC" onclick="clearExpression()"></td>
+                <td><input type="button" value="Del" onclick="deleteLastCharacter()"></td>
+                <td><input type="button" value="(" onclick="appendToExpression('(')"></td>
+                <td><input type="button" value=")" onclick="appendToExpression(')')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="appendToExpression('7')"></td>
+                <td><input type="button" value="8" onclick="appendToExpression('8')"></td>
+                <td><input type="button" value="9" onclick="appendToExpression('9')"></td>
+                <td><input type="button" value="+" onclick="appendToExpression('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="appendToExpression('4')"></td>
+                <td><input type="button" value="5" onclick="appendToExpression('5')"></td>
+                <td><input type="button" value="6" onclick="appendToExpression('6')"></td>
+                <td><input type="button" value="-" onclick="appendToExpression('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="appendToExpression('1')"></td>
+                <td><input type="button" value="2" onclick="appendToExpression('2')"></td>
+                <td><input type="button" value="3" onclick="appendToExpression('3')"></td>
+                <td><input type="button" value="*" onclick="appendToExpression('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="appendToExpression('0')"></td>
+                <td><input type="button" value="." onclick="appendToExpression('.')"></td>
+                <td><input type="button" value="/" onclick="appendToExpression('/')"></td>
+                <td><input type="button" value="=" onclick="evaluateExpression()"></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
